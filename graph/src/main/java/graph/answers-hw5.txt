@@ -1,0 +1,27 @@
+## CSE 331 hw-graph Coding Questions
+
+## Part 2
+###########################################################################
+
+Briefly explain why you included the operations you did and why you feel they are a sufficient
+interface to a graph. If your design includes multiple classes or interfaces, explain why you
+included each one; if not, explain whether you considered additional classes and why you decided
+not to include them.
+
+I included operations of adding and removing edge/nodes, getNode, so that it could return all nodes
+in the graph and getChildren. Of which, would return all the children nodes with the getters for the basic
+information like the size of the graph or whether or not it was empty and why it would allow basic operations
+to be performed. This would also allow for more flexibility on the ADT later. I also included the Node class
+and Edges class to make my code more abstract/readable.
+
+## Part 3
+###########################################################################
+
+What was your testing strategy for this assignment? How do your script tests and JUnit tests
+differ from each other (if they do), and why?
+
+The testing strategy I decided on for this assignment was to use test to perform basic operations just
+so that I could check if a graph was constructed correctly and if a Node was added correctly. I used
+the JUnit tests to assisted the testScripts with tests that could not be accounted for easily.
+This allowed me to check if the add and remove methods returned the right boolean. This made it where
+I could create as many test cases as possible.

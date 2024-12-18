@@ -1,0 +1,43 @@
+## CSE 331 hw-setup Questions
+## Part 7: Answering Questions About the Code
+
+1. Why did Fibonacci fail the testThrowsIllegalArgumentException< test? What (if anything) did
+you have to do to fix it? If you did not have to change anything to fix this issue, explain why.
+    Fibonacci failed because originally it should have been testing for negative numbers but instead it was set to
+    n <= 0 which included 0 as a case, this was causing it to throw an exception on zero. I removed the "=" so that
+    it would only test for negatives.
+
+2. Why did Fibonacci fail the testBaseCase test? What (if anything) did you have to do to fix
+it? If you did not have to change anything to fix this issue, explain why.
+    Fibonacci failed this test because it was throwing an exception for 0. This issue was fixed once I resolved
+    the testThrowsIllegalArgumentException test.
+
+
+3.Why did Fibonacci fail the testInductiveCase test? What (if anything) did you have to do to
+fix it? If you did not have to change anything to fix this issue, explain why.
+    Fibonacci failed this test because it only needed to return 1 for the cases involving 0 and 1. I fixed
+    this by changing the return statement to return 1 instead when n < 2.
+
+
+## Part 8: Debugger Tutorial
+
+1. What are the values of "x", "y", and "sum" printed by your statement? Why was x not equal 
+to the first integer entered here, and how could we fix this?
+    The value of "x" is 4, "y" is 4, and "sum" is zero when we enter 5 for our first input and 4 as the second.
+    The reason why x was not equal to the first integer entered is because our integer that we input is being multiplied by 2
+    and divded by 2 which is causing us to get a different x. To fix this, we just need to remove everything else except
+    for "console.nextInt();".
+
+
+2. What are all the names and values listed in the “Variables” panel? What does the “frames” 
+tab list as the current method and line number? (Write down the text that was highlighted when 
+the Debug perspective first opened.)
+    All the names and values listed in the "Variables" panel include "x = 3" and "y = 3". While, in the "frames"
+    tab list, the text that was highlighted included "return x - y; x: 3   y: 4"
+
+
+3. What are all the names and values listed in the “Variables” panel after each of the two step overs?
+    All of the names and values listed in the "Variables" panel before the steps included, "x = 3" and "y = 4". Then, after
+    the first step over "args = {String[0]@714} []" is added. Finally, after the second step over, 
+    "console = {Scanner@715} java.util.Scanner[delimiters=\p{javaWhitespace}+][position=3][match valid=true][need input=false][source closed=false] [skipped=false][group separator=\x{2c}][decimal separator=\x{2e}][positive prefix=][negative prefix=\Q-\E][positive suffix=][negative suffix=][NaN string=\QNaN\E][infinity string=\Q∞\E]" is added.
+

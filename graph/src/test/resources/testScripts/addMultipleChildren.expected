@@ -1,0 +1,30 @@
+#this test adds multiple children to two different nodes
+
+#create a graph
+created graph family
+
+#add nodes to the graph
+added node dad to family
+added node mom to family
+added node son to family
+added node daughter to family
+added node dog to family
+
+#add edges with dad as parent for every node except mom
+added edge child from dad to son in family
+added edge secondChild from dad to daughter in family
+added edge bestFriend from dad to dog in family
+
+#add edges with mom as parent for every node except dad
+added edge mamasBoy from mom to son in family
+added edge daddysGirl from mom to daughter in family
+added edge pet from mom to dog in family
+
+#output all nodes in the graph
+family contains: dad daughter dog mom son
+
+#output all of the children of dad
+the children of dad in family are: daughter(secondChild) dog(bestFriend) son(child)
+
+#output all of the children of mom
+the children of mom in family are: daughter(daddysGirl) dog(pet) son(mamasBoy)

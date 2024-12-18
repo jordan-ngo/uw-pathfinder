@@ -1,0 +1,20 @@
+#Create a graph
+CreateGraph graph
+
+#Add three nodes to the graph
+AddNode graph one
+AddNode graph two
+AddNode graph three
+
+#Add edges to the graph from one to two, two to three, and three to one with labels
+AddEdge graph one two sugar
+AddEdge graph two three spice
+AddEdge graph three one nice
+
+#Output the list of all nodes in the graph
+ListNodes graph
+
+#Output the list of children for node one, two, and three
+ListChildren graph one
+ListChildren graph two
+ListChildren graph three

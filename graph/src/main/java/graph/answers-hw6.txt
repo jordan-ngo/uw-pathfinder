@@ -1,0 +1,63 @@
+## CSE 331 HW6 Questions
+
+NOTE: This file is used as part of HW6, and is not due as part of the HW5
+submission. You may leave it blank for HW5.
+
+## Part 1
+###########################################################################
+
+A few examples of possible Graph representations:
+
+    A: A collection of nodes and a collection of edges.
+    B: An adjacency list, in which each node is associated with a list of its outgoing edges.
+    C: An adjacency matrix, which explicitly represents, for every pair ⟨A,B⟩ of nodes, whether there 
+       is a link from A to B, and how many.
+
+1. In two or three sentences, explain an advantage and a disadvantage of each of the
+representations listed above (for example, in terms of runtime complexity, space
+complexity, or ease of implementation).
+
+A: When you use a collection of nodes, you could easily access the nodes and edges but if you
+wanted to see an edge between two nodes, you would need to iterate through all of the edges.
+This would make the program have a slower run time.
+
+B: An adjacency list as an ADT is efficient with space since space is allocated to edges that
+only exists in the graph, this is different from an adjacency matrix. One disadvantage to this
+is the fact that it is slow in terms of determining whether or not an edge exists between two
+nodes.
+
+C: An adjacency matrix would have a fast O(1) operation when performing on edges since the
+edges are not stored in the ADT and can be indexed in O(1) time. However, the matrix will contain
+many cells that are not used which also makes the adjacency matrix be less efficient when it
+comes to space.
+
+2. In two to three sentences, describe the representation you chose and explain why you
+chose it. If you chose to use a different representation than one of the three we described
+above, be sure to list its advantages and disadvantages, too.
+
+I chose to represent my graph with an adjacency matrtix because of the speed when it comes to
+operations dealing with edges. Adjancecy matrices can add new edges quickly with array indexing
+and is also very fast when determining if whether or not an edge exists. However, it can also
+be said that this ADT has a poor time complexity when resizing, this was fixed by using a matrix
+which included nested ArrayLists, which allowed in the reduction of the complexity of the resizing
+operation from O(rows * cols) to 0(rows) + 0(cols).
+
+
+## Part 4
+###########################################################################
+
+    (Please keep your answers brief and to-the-point.)
+
+1. Describe any new tests you added and why you added them, or why you feel that your original
+tests alone are sufficient.
+
+I did not create any new test scripts because I felt that the original tests that I had created
+were enough in terms of testing current issues. On a side note, I also felt that my ADT
+did well in terms of time efficiency.
+
+2. Did you make any changes to your specifications as you were implementing your Graph? (yes/no)
+If yes, describe your changes and why you made them.
+
+No major changes were made to my specifications because I felt that my ADT was already efficient enough. I'm sure
+that I will make changes later if given the chance, however, I feel okay with what I have right now.
+

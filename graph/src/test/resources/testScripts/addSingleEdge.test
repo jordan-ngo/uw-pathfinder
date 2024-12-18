@@ -1,0 +1,15 @@
+# Create a graph A
+CreateGraph A
+
+# Add two nodes
+AddNode A one
+AddNode A two
+
+# Add an edge named edgy from one to two
+AddEdge A one two edgy
+
+# Output all nodes in the graph
+ListNodes A
+
+# Output all the children of node one in graph A
+ListChildren A one

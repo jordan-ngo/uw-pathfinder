@@ -1,0 +1,17 @@
+# Create a graph A
+created graph A
+
+# Add two nodes
+added node one to A
+added node two to A
+
+# Add an edge named edgy from one to two
+added edge edgy from one to two in A
+
+# Output all nodes in the graph
+A contains: one two
+
+# Output all the children of node one in graph A
+the children of one in A are: two(edgy)
+
+

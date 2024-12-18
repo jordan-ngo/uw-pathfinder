@@ -1,0 +1,30 @@
+#this test adds multiple children to two different nodes
+
+#create a graph
+CreateGraph family
+
+#add nodes to the graph
+AddNode family dad
+AddNode family mom
+AddNode family son
+AddNode family daughter
+AddNode family dog
+
+#add edges with dad as parent for every node except mom
+AddEdge family dad son child
+AddEdge family dad daughter secondChild
+AddEdge family dad dog bestFriend
+
+#add edges with mom as parent for every node except dad
+AddEdge family mom son mamasBoy
+AddEdge family mom daughter daddysGirl
+AddEdge family mom dog pet
+
+#output all nodes in the graph
+ListNodes family
+
+#output all of the children of dad
+ListChildren family dad
+
+#output all of the children of mom
+ListChildren family mom

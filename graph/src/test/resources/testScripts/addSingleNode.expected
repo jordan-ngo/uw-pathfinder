@@ -1,0 +1,8 @@
+# Create a graph A
+created graph A
+
+# Add one node
+added node one to A
+
+# Output all nodes in the graph
+A contains: one

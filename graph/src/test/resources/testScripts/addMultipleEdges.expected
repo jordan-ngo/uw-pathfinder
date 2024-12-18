@@ -1,0 +1,22 @@
+#Create a graph
+created graph graph
+
+#Add three nodes to the graph
+added node one to graph
+added node two to graph
+added node three to graph
+
+#Add edges to the graph from one to two, two to three, and three to one with labels
+added edge sugar from one to two in graph
+added edge spice from two to three in graph
+added edge nice from three to one in graph
+
+#Output the list of all nodes in the graph
+graph contains: one three two
+
+#Output the list of children for node one, two, and three
+the children of one in graph are: two(sugar)
+the children of two in graph are: three(spice)
+the children of three in graph are: one(nice)
+
+

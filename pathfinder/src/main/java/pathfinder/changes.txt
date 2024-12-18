@@ -1,0 +1,5 @@
+Briefly list any changes you made to your graph class during hw-pathfinder, and why you made those changes.
+
+The changes that I've made throughout graph were very major because I ended up changing my whole ADT
+since I kept running into problems. Additionally, I made some changes to Path and other classes in textInterface
+so that Path could be generic.

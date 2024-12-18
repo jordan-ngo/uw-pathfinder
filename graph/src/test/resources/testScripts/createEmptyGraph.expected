@@ -1,0 +1,5 @@
+# Create a graph named empty
+created graph empty
+
+# Output all of the nodes in this empty graph
+empty contains:

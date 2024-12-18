@@ -1,0 +1,5 @@
+# Create a graph named empty
+CreateGraph empty
+
+# Output all of the nodes in this empty graph
+ListNodes empty
